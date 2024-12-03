@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Kameron:wght@400..700&family=Oswald:wght@200..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.oswald {
+    font-family: "Oswald", sans-serif;
+}
+
+.kameron {
+    font-family: "Kameron", serif;
+}

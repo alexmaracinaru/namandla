@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Namandla Advisors</title>
+  <link href="./styles.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800">
+ <!-- Navbar -->
+<nav class="flex justify-between items-center px-6 md:px-36 py-4 bg-white">
+    <!-- Logo -->
+    <img src="./images/logo.svg" alt="Namandla Advisors" class="w-36 h-auto">
+  
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex items-center space-x-8">
+      <a href="#" class="kameron hover:underline">Our Studio</a>
+      <a href="#" class="kameron hover:underline">Case Studies</a>
+      <a href="#" class="kameron hover:underline">Startup Consulting</a>
+      <button class="kameron px-4 py-2 bg-black text-white rounded-full hover:bg-gray-600 ease-in-out duration-300">
+        Assessment
+      </button>
+    </div>
+  
+    <!-- Mobile Menu Button -->
+    <button id="mobile-menu-button" class="block md:hidden text-black">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+    </button>
+  
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="absolute top-16 left-0 w-full bg-white shadow-md hidden flex-col space-y-4 p-4">
+      <a href="#" class="kameron hover:underline block">Our Studio</a>
+      <a href="#" class="kameron hover:underline block">Case Studies</a>
+      <a href="#" class="kameron hover:underline block">Startup Consulting</a>
+      <button class="kameron w-full px-4 py-2 bg-black text-white rounded-full hover:bg-gray-600 ease-in-out duration-300">
+        Assessment
+      </button>
+    </div>
+  </nav>
+  
+
+<!-- Hero Section -->
+<section class="flex flex-col items-start px-6 sm:px-12 md:px-24 pt-8 max-w-5xl ml-auto">
+    <h1 class="text-4xl sm:text-5xl md:text-6xl leading-tight oswald text-left md:text-left">
+      We help startups align, refine, brand, and launch successfully.
+    </h1>
+    <h2 class="mt-4 text-sm sm:text-base md:text-lg text-gray-600 kameron md:max-w-[700px] text-left md:text-left">
+      We provide a full-service ecosystem to support startups in aligning founders, refining products, building powerful brands, and launching effective go-to-market strategies.
+    </h2>
+  </section>
+  
+
+  <!-- Our Startups Section -->
+<section class="px-6 sm:px-12 md:px-24 lg:px-36 py-10">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl kameron mb-8 text-center md:text-left">Our Startups</h2>
+    <div id="startups" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+  </section>
+  
+  <!-- Template for Startup Cards -->
+  <template id="startup-template">
+    <div class="space-y-4">
+      <img src="" alt="" class="rounded-lg w-full object-cover">
+      <p class="text-xs sm:text-sm text-gray-500 category bg-gray-100 w-fit rounded-lg px-2 py-1">Category</p>
+      <h3 class="text-xl sm:text-2xl md:text-3xl name"></h3>
+      <p class="text-gray-600 kameron text-sm sm:text-base max-w-[300px] description"></p>
+      <a href="#" class="text-gray-600 text-sm font-medium hover:underline link">
+        Discover More &rarr;
+      </a>
+    </div>
+  </template>
+  
+
+  <!-- About Us Section -->
+<section class="px-6 sm:px-12 md:px-24 lg:px-36 md:py-24">
+    <div class="max-w-6xl">
+      <h2 class="text-4xl sm:text-5xl md:text-6xl leading-tight oswald ">
+        We’re entrepreneurial brand builders, growth partners, and design leaders who’ve built businesses, including our own — many times over.
+      </h2>
+      <button class="kameron px-6 py-2 mt-6 bg-black text-white rounded-full hover:bg-gray-800 transition duration-300 ease-in-out">
+        More about us
+      </button>
+    </div>
+ 
+  
+   <!-- Team Profiles Section -->
+    <div class="flex md:justify-end">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12 max-w-3xl gap-4">
+        <!-- Profile Card 1 -->
+        <div class="flex flex-col items-start space-y-4">
+          <img src="./images/alexandra.png" alt="Alexandra Maracinaru Global Brand & Design Executive." class="rounded-lg w-64 object-cover filter grayscale">
+          <h3 class="text-xl">Alexandra Maracinaru</h3>
+          <p class="text-gray-600 kameron max-w-[150px]">Global Brand & Design Executive.</p>
+          <div class="flex space-x-8">
+            <a href="#" class="hover:text-gray-500"><img src="./images/linkedin.svg" alt="LinkedIn" class="w-6 h-6"></a>
+            <a href="#" class="hover:text-gray-500"><img src="./images/x.svg" alt="Twitter" class="w-6 h-6"></a>
+            <a href="#" class="hover:text-gray-500"><img src="./images/email.svg" alt="Email" class="w-6 h-6"></a>
+          </div>
+          <div class="flex space-x-2">
+            <a href="https://brandiaq.com" target="_blank" class="kameron ml-0 px-4 py-2 border border-gray-300 rounded-full hover:bg-gray-200 transition duration-300 ease-in-out">
+              brandiaq
+            </a>
+            <a href="https://alexandramaracinaru.com" target="_blank" class="kameron px-4 py-2 border border-gray-300 rounded-full hover:bg-gray-200 transition duration-300 ease-in-out">
+              al.ma
+            </a>
+          </div>
+        </div>
+  
+        <!-- Profile Card 2 -->
+        <div class="flex flex-col items-start space-y-4">
+          <img src="./images/jonatan.png" alt="Jonatan Håkansson Growth Consultant. Startup Scout." class="rounded-lg w-64 object-cover filter grayscale">
+          <h3 class="text-xl">Jonatan Håkansson</h3>
+          <p class="text-gray-600 kameron max-w-[150px]">Growth Consultant. Startup Scout.</p>
+          <div class="flex space-x-8">
+            <a href="#" class="hover:text-gray-500"><img src="./images/linkedin.svg" alt="LinkedIn" class="w-6 h-6"></a>
+            <a href="#" class="hover:text-gray-500"><img src="./images/x.svg" alt="Twitter" class="w-6 h-6"></a>
+            <a href="#" class="hover:text-gray-500"><img src="./images/email.svg" alt="Email" class="w-6 h-6"></a>
+          </div>
+          <a href="#" class="kameron px-4 py-2 border border-gray-300 rounded-full hover:bg-gray-200 transition duration-300 ease-in-out">
+            hawkeye-invest
+          </a>
+        </div>
+  
+        <!-- Profile Card 3 -->
+        <div class="flex flex-col items-start space-y-4">
+          <img src="./images/patricia.png" alt="Patricia Lourenco Product Manager." class="rounded-lg w-64 object-cover filter grayscale">
+          <h3 class="text-xl ">Patricia Lourenco</h3>
+          <p class="text-gray-600 kameron max-w-[100px]">Product Manager.</p>
+          <div class="flex space-x-8">
+            <a href="#" class="hover:text-gray-500"><img src="./images/linkedin.svg" alt="LinkedIn" class="w-6 h-6"></a>
+            <a href="#" class="hover:text-gray-500"><img src="./images/x.svg" alt="Twitter" class="w-6 h-6"></a>
+            <a href="#" class="hover:text-gray-500"><img src="./images/email.svg" alt="Email" class="w-6 h-6"></a>
+          </div>
+          <a href="#" class="kameron px-4 py-2 border border-gray-300 rounded-full hover:bg-gray-200 transition duration-300 ease-in-out">
+            pixellate.studio
+          </a>
+        </div>
+      </div>
+    </div>
+ </section>
+
+ <!-- Our Approach Section -->
+<section class="px-6 md:px-36 md:py-24 pt-16">
+    <h2 class="text-4xl sm:text-5xl md:text-6xl kameron md:mb-24">Our Approach</h2>
+  
+    <!------------- Step 1 --------------------->
+    <div class="flex flex-col md:flex-row w-full items-start md:mb-12">
+      <!-- Step Number -->
+      <div class="text-2xl sm:text-3xl md:text-3xl oswald md:pt-12 pt-8  md:pr-36">01 --</div>
+  
+      <!-- Content Section -->
+      <div class="flex flex-col flex-1 px-12">
+        <!-- Full Width Border -->
+        <div class="border-t border-black w-full mb-8"></div>
+  
+        <!-- Content Area -->
+        <div class="flex md:justify-between flex-col md:flex-row">
+          <h3 class="text-5xl oswald">Founder Alignment Assessment</h3>
+          <div class="description">
+            <p class="text-gray-600 kameron mt-4 max-w-[400px]">
+              Startups often fail due to misaligned visions and goals among founders. Addressing this first ensures a solid leadership foundation, cohesive decision-making, and shared priorities.
+            </p>
+            <p class="mt-6 text-2xl oswald">/ Key Deliverables</p>
+            <p class="kameron text-gray-600 max-w-[300px]">
+              Alignment assessment report, actionable recommendations for team cohesion.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!------------- Step 2 --------------------->
+     <div class="flex flex-col md:flex-row w-full items-start md:mb-12">
+        <!-- Step Number -->
+        <div class="text-2xl sm:text-3xl md:text-3xl oswald md:pt-12 pt-8 md:pr-36">02 --</div>
+    
+        <!-- Content Section -->
+        <div class="flex flex-col flex-1 px-12">
+          <!-- Full Width Border -->
+          <div class="border-t border-black w-full mb-8"></div>
+    
+          <!-- Content Area -->
+          <div class="flex md:justify-between flex-col md:flex-row">
+            <h3 class="text-5xl oswald">Design Sprint</h3>
+            <div class="description">
+              <p class="text-gray-600 kameron mt-4 max-w-[400px]">
+                Once the founders are aligned, the next priority is to validate ideas, prototypes, and assumptions rapidly. A well-executed Design Sprint minimizes wasted time and resources by focusing on feasibility and early feedback.</p>
+              <p class="mt-6 text-2xl oswald">/ Key Deliverables</p>
+              <p class="kameron text-gray-600 max-w-[300px]">
+                Prototypes, user-tested feedback, insights into product-market fit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!------------ Step 3 --------------------->
+     <div class="flex flex-col md:flex-row w-full items-start mb-12">
+        <!-- Step Number -->
+        <div class="text-2xl sm:text-3xl md:text-3xl oswald md:pt-12 pt-8 md:pr-36">03 --</div>
+    
+        <!-- Content Section -->
+        <div class="flex flex-col flex-1 px-12">
+          <!-- Full Width Border -->
+          <div class="border-t border-black w-full mb-8"></div>
+    
+          <!-- Content Area -->
+          <div class="flex md:justify-between flex-col md:flex-row">
+            <h3 class="text-5xl oswald">Product-Market Fit (PMF)</h3>
+            <div class="description">
+              <p class="text-gray-600 kameron mt-4 max-w-[400px]">
+                After validating the prototype, the startup must refine the product to align with market needs. This step ensures the product is viable and scalable, reducing the risk of launching something without demand.              </p>
+              <p class="mt-6 text-2xl oswald">/ Key Deliverables</p>
+              <p class="kameron text-gray-600 max-w-[300px]">
+                PMF validation report, scaling roadmap.              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!------------ Step 4 --------------------->
+     <div class="flex flex-col md:flex-row w-full items-start mb-12">
+        <!-- Step Number -->
+        <div class="text-2xl sm:text-3xl md:text-3xl oswald md:pt-12 pt-8 md:pr-36">04 --</div>
+    
+        <!-- Content Section -->
+        <div class="flex flex-col flex-1 px-12">
+          <!-- Full Width Border -->
+          <div class="border-t border-black w-full mb-8"></div>
+    
+          <!-- Content Area -->
+          <div class="flex md:justify-between flex-col md:flex-row">
+            <h3 class="text-5xl oswald">Brand Strategy & Identity</h3>
+            <div class="description">
+              <p class="text-gray-600 kameron mt-4 max-w-[400px]">
+                Once the product has achieved PMF, the startup needs a compelling brand to capture attention, communicate its purpose, and build trust. Branding also sets the foundation for effective marketing and fundraising.              </p>
+              <p class="mt-6 text-2xl oswald">/ Key Deliverables</p>
+              <p class="kameron text-gray-600 max-w-[300px]">
+                Brand strategy document, visual identity package, pitch deck.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!------------ Step 5 --------------------->
+     <div class="flex flex-col md:flex-row w-full items-start mb-12">
+        <!-- Step Number -->
+        <div class="text-2xl sm:text-3xl md:text-3xl oswald md:pt-12 pt-8 md:pr-36">05 --</div>
+    
+        <!-- Content Section -->
+        <div class="flex flex-col flex-1 px-12">
+          <!-- Full Width Border -->
+          <div class="border-t border-black w-full mb-8"></div>
+    
+          <!-- Content Area -->
+          <div class="flex md:justify-between flex-col md:flex-row">
+            <h3 class="text-5xl oswald">Go-To-Market (GTM) Strategy</h3>
+            <div class="description">
+              <p class="text-gray-600 kameron mt-4 max-w-[400px]">With the product refined and the brand established, the final step is planning and executing a strategy for rapid market traction. This stage focuses on customer acquisition, scaling, and measuring success.</p>
+              <p class="mt-6 text-2xl oswald">/ Key Deliverables</p>
+              <p class="kameron text-gray-600 max-w-[300px]">
+                GTM strategy, launch plan with milestones.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  
+  
+  <!-- Integrated Capabilities Section -->
+<section class="md:px-36 px-6 md:py-24 py-12">
+    <h2 class="md:text-5xl text-4xl kameron md:mb-12 mb-8">Integrated Capabilities</h2>
+  
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <!-- Capability 1 -->
+      <div class="flex flex-col space-y-6">
+        <div class="relative">
+            <!-- Background Image -->
+            <img src="./images/digital.png" alt="Building a Strong Digital Presence" class="rounded-lg object-cover w-full">
+          
+            <!-- Absolute Positioned Blurred Container -->
+            <div class="absolute inset-0 flex md:pt-24 pt-12 md:pl-16 pl-6 md:pb-16 pb-6">
+              <div class="bg-white bg-opacity-10 border border-white border-opacity-40 backdrop-blur-md rounded-lg p-6">
+                <div class="text-white text-left">
+                  <h3 class="md:text-8xl text-3xl kameron">01 /</h3>
+                  <p class="md:text-3xl text-xl md:max-w-[240px] max-w-[150px]">Building a Strong Digital Presence</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        <p class="text-2xl  max-w-[550px]">
+          Your startup's digital presence is the foundation for credibility and connection. We craft engaging digital ecosystems that resonate with your audience and scale with your growth.
+        </p>
+        <div class="space-y-2">
+          <p class="text-xs text-gray-500 category bg-gray-100 w-fit rounded-lg px-2 py-1 ">How it fits</p>
+          <ul class="list-none ">
+            <li class="kameron text-gray-600 max-w-[350px]">/ Amplifies your Brand Strategy by establishing consistent messaging across all touchpoints.</li>
+            <li class="kameron text-gray-600 max-w-[350px]">/ Supports Go-To-Market strategies with a robust online footprint.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Capability 2 -->
+      <div class="flex flex-col space-y-6">
+        <div class="relative">
+            <!-- Background Image -->
+            <img src="./images/web.png" alt="Building a Strong Digital Presence" class="rounded-lg object-cover w-full">
+          
+            <!-- Absolute Positioned Blurred Container -->
+            <div class="absolute inset-0 flex md:pt-64 pt-32 md:pl-16 pl-6 md:pb-16 pb-6">
+              <div class="bg-white bg-opacity-10 border border-white border-opacity-40 backdrop-blur-md rounded-lg p-6">
+                <div class="text-white text-left">
+                  <h3 class="md:text-8xl text-3xl kameron">02 /</h3>
+                  <p class="md:text-3xl text-xl md:max-w-[240px] max-w-[150px]">Web Design & Optimization</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <p class="text-2xl  max-w-[550px]">
+          Your website is often your startup's first impression. We design and optimize digital experiences that communicate your product, engage users, and drive conversions.
+        </p>
+        <div class="space-y-2">
+          <p class=" text-xs text-gray-500 category bg-gray-100 w-fit rounded-lg px-2 py-1">How it fits</p>
+          <ul class="list-none">
+            <li class="kameron text-gray-600 max-w-[350px]">/ Elevates Product-Market Fit by translating user insights into intuitive designs.</li>
+            <li class="kameron text-gray-600 max-w-[350px]">/ Integrates into GTM Strategy as a conversion-focused platform.</li>
+          </ul>
+        </div>
+      </div>
+       <!-- Capability 3 -->
+       <div class="flex flex-col space-y-6">
+        <div class="relative">
+            <!-- Background Image -->
+            <img src="./images/comm.png" alt="Building a Strong Digital Presence" class="rounded-lg object-cover w-full">
+          
+            <!-- Absolute Positioned Blurred Container -->
+            <div class="absolute inset-0 flex md:pt-80 pt-36 md:pl-16 pl-8 md:pb-16 pb-8">
+              <div class="bg-white bg-opacity-10 border border-white border-opacity-40 backdrop-blur-md rounded-lg p-6">
+                <div class="text-white text-left">
+                  <h3 class="md:text-8xl text-3xl kameron">03 /</h3>
+                  <p class="md:text-3xl text-xl md:max-w-[240px] max-w-[150px]">Communication Strategy</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <p class="text-2xl  max-w-[550px]">
+            Clear, impactful communication is key to standing out. We develop strategies to deliver your message to the right audience, at the right time, on the right channels.</p>
+        <div class="space-y-2">
+          <p class=" text-xs text-gray-500 category bg-gray-100 w-fit rounded-lg px-2 py-1">How it fits</p>
+          <ul class="list-none">
+            <li class="kameron text-gray-600 max-w-[350px]">/ Reinforces Founder Alignment by crafting a unified voice..</li>
+            <li class="kameron text-gray-600 max-w-[350px]">/ Enhances Brand Identity by defining tone and core messaging..</li>
+          </ul>
+        </div>
+      </div>
+       <!-- Capability 4 -->
+       <div class="flex flex-col space-y-6">
+        <div class="relative">
+            <!-- Background Image -->
+            <img src="./images/content.png" alt="Building a Strong Digital Presence" class="rounded-lg object-cover w-full">
+          
+            <!-- Absolute Positioned Blurred Container -->
+            <div class="absolute inset-0 flex md:pt-56 pt-24 md:pl-16 pl-8 md:pb-16 pb-8">
+              <div class="bg-white bg-opacity-10 border border-white border-opacity-40 backdrop-blur-md rounded-lg p-6">
+                <div class="text-white text-left">
+                  <h3 class="md:text-8xl text-3xl kameron">04 /</h3>
+                  <p class="md:text-3xl text-xl md:max-w-[200px] max-w-[120px]">Content Strategy</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <p class="text-2xl  max-w-[550px]">
+            Great content drives trust, engagement, and growth. We create actionable content strategies to keep your audience informed and inspired.</p>
+        <div class="space-y-2">
+          <p class=" text-xs text-gray-500 category bg-gray-100 w-fit rounded-lg px-2 py-1">How it fits</p>
+          <ul class="list-none">
+            <li class="kameron text-gray-600 max-w-[350px]">/ Reinforces Founder Alignment by crafting a unified voice..</li>
+            <li class="kameron text-gray-600 max-w-[350px]">/ Enhances Brand Identity by defining tone and core messaging..</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Book a Call With Us Section -->
+ <section class="px-6 sm:px-12 md:px-24 lg:px-36 md:py-12 py-8">
+    <div class="max-w-6xl">
+      <h2 class="text-4xl sm:text-5xl md:text-6xl leading-tight oswald ">
+        We also focus on helping the early-stage startups that are otherwise overlooked.
+      </h2>
+      <button class="kameron px-6 py-2 mt-6 bg-black text-white rounded-full hover:bg-gray-800 transition duration-300 ease-in-out">
+        Book a call with us
+      </button>
+    </div>
+ </section>
+ 
+  <!-- JavaScript -->
+  <script src="./script.js"></script>
+</body>
+</html>
+
+
