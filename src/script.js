@@ -19,3 +19,11 @@ fetch('./startups.json')
     });
   })
   .catch((error) => console.error('Error fetching startups:', error));
+
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+  
+    mobileMenuButton.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
